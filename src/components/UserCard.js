@@ -48,6 +48,7 @@ const Value = styled.p`
 const UserCard = () => {
     const [ user, setUser ] = useState(null)
 
+    console.log(user);
     useEffect(() => {
       axios.get("https://dummyjson.com/users/7")
         .then((response) => {
